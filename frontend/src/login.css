@@ -60,7 +60,7 @@ section .contentBx .formBx .login-title{
     border-bottom:4px solid #00FFFF;
     display:inline-block;
     justify-content:center;
-    //letter-spacing:1px;
+    letter-spacing:1px;
 }
 
 section .contentBx .formBx .inputBx{
@@ -74,7 +74,7 @@ section .contentBx .formBx .inputBx span{
     color:#607d8b;
     font-weight:300;
     font-size:16px;
-    //letter-spacing:1px;
+    letter-spacing:1px;
 }
 
 section .contentBx .formBx .inputBx .login-input{
@@ -84,7 +84,7 @@ section .contentBx .formBx .inputBx .login-input{
     font-weight:400;
     border:1px solid #607d8b;
     font-size:16px;
-    //letter-spacing:1px;
+    letter-spacing:1px;
     color:#607d8b;
     background:trasparent;
     border-radius:30px;
@@ -115,7 +115,7 @@ section .contentBx .formBx .inputBx .remember-para{
 }
 
 section .contentBx .formBx .inputBx .remember-para a{
-    color:##00FFFF;
+    color:#00FFFF;
 }
 
 section .contentBx .formBx .login-social{
