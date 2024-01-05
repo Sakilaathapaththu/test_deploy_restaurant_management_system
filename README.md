@@ -1,0 +1,2 @@
+# test_deploy_restaurant_management_system
+ deploy restaurant_management_system
