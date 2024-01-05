@@ -64,7 +64,7 @@ function Login(){
 							Sign In
 						    </button>
                             <div className="inputBx">
-                                <p className="remember-para">Don't have an account?<Link to={"/register"}>Sign Up</Link></p>
+                                <p className="remember-para">Don't have an account?<Link to={"/home"}>Sign Up</Link></p>
                             </div>
                             
 						    
