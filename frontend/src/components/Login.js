@@ -19,7 +19,7 @@ function Login(){
     const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "https://benthota.onrender.com/api/auth";
+			const url = "https://mern-stack-caqm.onrender.com/api/auth";
 			const { data: res } = await axios.post(url, data);
 			localStorage.setItem("token", res.data);
 			window.location = "/home";
