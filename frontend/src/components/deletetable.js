@@ -8,7 +8,7 @@ export default function DeleteTables() {
 
   function deleteTable() {// Define the deleteTable function that will make the HTTP DELETE request to delete the table record with the specified ID.
     axios
-      .delete(`http://localhost:8070/tables/delete/${id}`)
+      .delete(`https://mern-stack-caqm.onrender.com/tables/delete/${id}`)
       .then(function () {
         Swal.fire({
           icon: "success",

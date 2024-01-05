@@ -20,7 +20,7 @@ export default function AllCustomers(){
     },[])
 
     function getCustomer(){
-        axios.get("http://localhost:8070/customers/customers").then((res) => {
+        axios.get("https://mern-stack-caqm.onrender.com/customers/customers").then((res) => {
             setCustomer(res.data)
             setCustomer(res.data);
         }).catch((error) => {
@@ -33,7 +33,7 @@ export default function AllCustomers(){
             console.error("Reg No is undefined or null.");
             return;
         }
-        axios.delete(`http://localhost:8070/customers/delete/${id}`)
+        axios.delete(`https://mern-stack-caqm.onrender.com/customers/delete/${id}`)
             .then(function() {
                 console.log("Customer details deleted");
                 toast.success("Customer details deleted",{theme:'colored'});

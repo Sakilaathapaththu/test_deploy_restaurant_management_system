@@ -20,7 +20,7 @@ export default function UpdateFinance(){
 
     useEffect(() => {
         function getFinance(){
-            axios.get("http://localhost:8070/finances/get/" + id).then((res) => {
+            axios.get("https://mern-stack-caqm.onrender.com/finances/get/" + id).then((res) => {
                 console.log(res.data);
                 setFinance(res.data);
                 setInvoiceID(res.data.InvoiceID)
@@ -52,7 +52,7 @@ export default function UpdateFinance(){
     
             console.log(UpdateFinance)
     
-            axios.put("http://localhost:8070/finances/update/" + id, UpdateFinance).then(function(){
+            axios.put("https://mern-stack-caqm.onrender.com/finances/update/" + id, UpdateFinance).then(function(){
                 toast.success("Finance Bill Updated Sucessfully!",{theme:'colored'});
                 setInvoiceID("");
                 setBillName("");

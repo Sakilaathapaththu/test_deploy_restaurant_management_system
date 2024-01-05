@@ -64,7 +64,7 @@ export default function AddOrder() {
     formData.append('dueDate', dueDate);
 
 
-    axios.post("http://localhost:8070/orders/add", formData).then(()=>{
+    axios.post("https://mern-stack-caqm.onrender.com/orders/add", formData).then(()=>{
       alert("Order Added")
       window.location = "/addOrder";
       

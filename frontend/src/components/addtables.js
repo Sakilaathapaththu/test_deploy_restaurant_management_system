@@ -57,7 +57,7 @@ export default function Inserttables(){
 				return;
 			}
       //sends a POST request to the backend API using the Axios library  
-        axios.post("http://localhost:8070/tables/add",newTable)
+        axios.post("https://mern-stack-caqm.onrender.com/tables/add",newTable)
         .then(()=>{alert(" Table added");
         formRef1.current.reset();
         formRef2.current.reset(); // reset the form after successful submission

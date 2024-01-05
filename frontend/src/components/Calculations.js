@@ -68,7 +68,7 @@ export default function Calculation(){
     }, [])
 
       function retrieveBills(){
-        axios.get("http://localhost:8000/finance/financeDashboard").then(res =>{
+        axios.get("https://mern-stack-caqm.onrender.com/finance/financeDashboard").then(res =>{
           if(res.data.success){
             this.setState({
               bills:res.data.existingBills
@@ -81,7 +81,7 @@ export default function Calculation(){
       }
 
       function retrieveEmployee(){
-        axios.get(`http://localhost:8000/employees/`).then(res=>{
+        axios.get(`https://mern-stack-caqm.onrender.com/employees/`).then(res=>{
         if(res.data.success){
             this.setState({
                 employee:res.data.existingEmployee
@@ -94,7 +94,7 @@ export default function Calculation(){
     }
 
     function retrieveOrders() {
-        axios.get("http://localhost:8000/orders/").then(res => {
+        axios.get("https://mern-stack-caqm.onrender.com/orders/").then(res => {
           if (res.data.success) {
             this.setState({
               orders: res.data.existingOrders
@@ -105,7 +105,7 @@ export default function Calculation(){
       }
 
       function retrieveRetail() {
-        axios.get("http://localhost:8000/tables/").then(res => {
+        axios.get("https://mern-stack-caqm.onrender.com/tables/").then(res => {
           if (res.data.success) {
             this.setState({
               orders: res.data.existingOrders

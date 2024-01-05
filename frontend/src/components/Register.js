@@ -24,7 +24,7 @@ function Register(){
         e.preventDefault()
 
         try{
-            const url = "http://localhost:8070/api/users";
+            const url = "https://mern-stack-caqm.onrender.com/api/users";
             const { data:res } = await axios.post(url,data);
             navigate("/")
             console.log(res.message);

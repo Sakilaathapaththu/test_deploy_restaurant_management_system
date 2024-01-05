@@ -24,7 +24,7 @@ const Updateitem = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:8070/inventories/post/${id}`);
+        const response = await axios.get(`https://mern-stack-caqm.onrender.com/inventories/post/${id}`);
         const data = response.data.post;
         setTables(data);
       } catch (error) {
@@ -76,7 +76,7 @@ const Updateitem = () => {
         ...inventories,
        
       };
-      await axios.put(`http://localhost:8070/inventories/update/${id}`, updatedTables);
+      await axios.put(`https://mern-stack-caqm.onrender.com/inventories/update/${id}`, updatedTables);
       alert('Reservation updated successfully');
       navigate(-1);
     } catch (error) {

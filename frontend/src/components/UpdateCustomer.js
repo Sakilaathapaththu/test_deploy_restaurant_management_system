@@ -20,7 +20,7 @@ export default function UpdateCustomer(){
 
     useEffect(() => {
         function getCustomer(){
-            axios.get("http://localhost:8070/customers/get/" + id).then((res) => {
+            axios.get("https://mern-stack-caqm.onrender.com/customers/get/" + id).then((res) => {
                 console.log(res.data);
                 setCustomer(res.data);
                 setRegNo(res.data.RegNo)

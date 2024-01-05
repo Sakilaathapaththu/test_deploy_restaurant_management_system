@@ -31,7 +31,7 @@ export default function AddFinance(){
                 PaymentDate
             }
     
-            axios.post("http://localhost:8070/finances/add",newBill).then(() => {
+            axios.post("https://mern-stack-caqm.onrender.com/finances/add",newBill).then(() => {
                 //console.log("New Bill Added Successfully!");
                 toast.success("Finance Bill Added Successfully!",{theme:'colored'});
                 setInvoiceID("");

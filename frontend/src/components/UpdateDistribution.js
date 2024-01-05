@@ -22,7 +22,7 @@ export default function UpdateDistribution(){
 
     useEffect(() => {
         function getDistribution(){
-            axios.get("http://localhost:8070/distributions/get/" + id).then((res) => {
+            axios.get("https://mern-stack-caqm.onrender.com/distributions/get/" + id).then((res) => {
                 console.log(res.data);
                 console.log(res.data);
                 setDate(res.data.Date)
@@ -56,7 +56,7 @@ export default function UpdateDistribution(){
     
             console.log(UpdateDistribution)
     
-            axios.put("http://localhost:8070/distributions/update/" + id, UpdateDistribution).then(function(){
+            axios.put("https://mern-stack-caqm.onrender.com/distributions/update/" + id, UpdateDistribution).then(function(){
                 toast.success("Distribution Updated Sucessfully!",{theme:'colored'});
                 setDate("");
                 setDambulla("");

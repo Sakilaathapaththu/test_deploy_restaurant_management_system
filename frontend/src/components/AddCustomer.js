@@ -43,7 +43,7 @@ export default function AddCustomer(){
                 Phone
             }
     
-            axios.post("http://localhost:8070/customers/add",newCustomer).then(() => {
+            axios.post("https://mern-stack-caqm.onrender.com/customers/add",newCustomer).then(() => {
                 //console.log("New Customer Added Successfully!");
                 toast.success("Customer Added Successfully!",{theme:'colored'});
                 setRegNo("");

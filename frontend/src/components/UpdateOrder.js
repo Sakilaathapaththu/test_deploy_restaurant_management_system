@@ -17,7 +17,7 @@ export default function UpdateOrder() {
 
     useEffect(() => {
         function getOrders() {
-            axios.get("http://localhost:8070/orders/getOrder/" + id).then((res) => {
+            axios.get("https://mern-stack-caqm.onrender.com/orders/getOrder/" + id).then((res) => {
                 console.log(res.data);
                 setItemCode(res.data.itemCode)
                 setCusId(res.data.cusId)
@@ -51,7 +51,7 @@ export default function UpdateOrder() {
 
         console.log(updateOrder)
 
-        axios.put("http://localhost:8070/orders/updateOrder/" + id, updateOrder)
+        axios.put("https://mern-stack-caqm.onrender.com/orders/updateOrder/" + id, updateOrder)
             .then(function () {
                 alert("Order data Updated")
             })

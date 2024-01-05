@@ -25,7 +25,7 @@ export default function AllEmployees() {
         getEmployees();
     }, [])
         function getEmployees(){
-            axios.get("http://localhost:8070/employees/").then((res) =>{
+            axios.get("https://mern-stack-caqm.onrender.com/employees/").then((res) =>{
                 console.log(res.data);
                 setEmployees(res.data);
                
@@ -47,7 +47,7 @@ export default function AllEmployees() {
                 {
                   label: 'Yes',
                   onClick: () => {
-                    axios.delete("http://localhost:8070/employees/delete/" + id)
+                    axios.delete("https://mern-stack-caqm.onrender.com/employees/delete/" + id)
                       .then(function() {
                         console.log("Employee details deleted");
                         toast.success("Employee details deleted",{theme:'colored'});

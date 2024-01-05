@@ -39,7 +39,7 @@ export default function AddDailyDetail() {
       };
 
       axios
-        .post("http://localhost:8070/dailydetail/addDaily", newStudent)
+        .post("https://mern-stack-caqm.onrender.com/dailydetail/addDaily", newStudent)
         .then(() => {
           alert("Reporting fields submitted");
 

@@ -20,7 +20,7 @@ export default function AllFinances(){
     },[])
 
     function getFinance(){
-        axios.get("http://localhost:8070/finances/financeDashboard").then((res) => {
+        axios.get("https://mern-stack-caqm.onrender.com/finances/financeDashboard").then((res) => {
             setFinance(res.data)
             setFinance(res.data);
         }).catch((error) => {
@@ -33,7 +33,7 @@ export default function AllFinances(){
             console.error("ID is undefined or null.");
             return;
         }
-        axios.delete(`http://localhost:8070/finances/delete/${id}`)
+        axios.delete(`https://mern-stack-caqm.onrender.com/finances/delete/${id}`)
             .then(function() {
                 console.log("Finance details deleted");
                 toast.success("Finance details deleted",{theme:'colored'});

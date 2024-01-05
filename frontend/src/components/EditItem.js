@@ -19,7 +19,7 @@ export default class EditItem extends Component{
   componentDidMount=()=>{
     const id = this.props.match.params.id;
 
-    axios.get(`http://localhost:8070/inventories/get/${id}`).then((res)=>{
+    axios.get(`https://mern-stack-caqm.onrender.com/inventories/get/${id}`).then((res)=>{
         if(res.data.success){
             this.setState({
                 type:res.data.post.type,
@@ -60,7 +60,7 @@ export default class EditItem extends Component{
       }
       console.log(data)
 
-      axios.put(`http://localhost:8070/inventories/update/${id}`,data)
+      axios.put(`https://mern-stack-caqm.onrender.com/inventories/update/${id}`,data)
       .then((res)=>{
         alert("stock updated");
         if(res.data.success){

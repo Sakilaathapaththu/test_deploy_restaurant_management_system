@@ -22,7 +22,7 @@ export default function AllDistribution() {
     },[])   
 
         function getDistribution(){
-            axios.get("http://localhost:8070/distributions/").then((res) =>{
+            axios.get("https://mern-stack-caqm.onrender.com/distributions/").then((res) =>{
                 setdistribution(res.data)
                 setdistribution(res.data);
                }).catch ((err)=>{
@@ -38,7 +38,7 @@ export default function AllDistribution() {
             console.error("ID is undefined or null.");
             return;
         }
-        axios.delete(`http://localhost:8070/distributions/delete/${id}`)
+        axios.delete(`https://mern-stack-caqm.onrender.com/distributions/delete/${id}`)
             .then(function() {
                 console.log("Distribution details deleted");
                 toast.success("Distribution details deleted",{theme:'colored'});

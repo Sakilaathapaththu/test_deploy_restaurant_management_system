@@ -21,7 +21,7 @@ export default function AllOrders() {
     
 
     function getOrders() {
-        axios.get("http://localhost:8070/orders/allOrders").then((res) => {
+        axios.get("https://mern-stack-caqm.onrender.com/orders/allOrders").then((res) => {
             console.log(res.data);
             setOrders(res.data)
         }).catch((error) => {
@@ -33,7 +33,7 @@ export default function AllOrders() {
             console.error("ID is undefined or null.");
             return;
         }
-        axios.delete(`http://localhost:8070/orders/deleteOrder/` + id)
+        axios.delete(`https://mern-stack-caqm.onrender.com/orders/deleteOrder/` + id)
             .then(function () {
                 console.log("Order details deleted");
                 toast.success("Order details deleted", { theme: 'colored' });

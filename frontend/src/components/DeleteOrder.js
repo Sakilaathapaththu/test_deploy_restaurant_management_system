@@ -6,7 +6,7 @@ export default function DeleteOrder() {
     const {id} = useParams();    
         
             function getOrders(){
-                axios.delete("http://localhost:8070/order/delete/" + id).then(function()  {
+                axios.delete("https://mern-stack-caqm.onrender.com/order/delete/" + id).then(function()  {
       alert("Order data deleted")
     }).catch((err) => {
       alert(err)

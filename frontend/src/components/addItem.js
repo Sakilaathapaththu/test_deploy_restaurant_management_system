@@ -27,7 +27,7 @@ export default function Insertitem(){
             totalprice
         }
         
-        axios.post("http://localhost:8070/inventories/add",newitem)
+        axios.post("https://mern-stack-caqm.onrender.com/inventories/add",newitem)
         .then((res)=>{alert("stock added");
         formRef.current.reset();
           if(res.newitem.success){

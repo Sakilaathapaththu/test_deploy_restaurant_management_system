@@ -6,7 +6,7 @@ export default function DeleteEmployee() {
     const {id} = useParams();    
         
             function getEmployees(){
-                axios.delete("http://localhost:8050/employees/delete/" + id).then(function()  {
+                axios.delete("https://mern-stack-caqm.onrender.com/employees/delete/" + id).then(function()  {
       alert("Employee data deleted")
     }).catch((err) => {
       alert(err)

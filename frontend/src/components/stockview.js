@@ -23,7 +23,7 @@ class Stock extends Component{
     }
 
     retrievePosts(){
-        axios.get("http://localhost:8070/inventories/inventories").then(res =>{
+        axios.get("https://mern-stack-caqm.onrender.com/inventories/inventories").then(res =>{
             if(res.data.success){
                 this.setState({
                     posts:res.data.existingPosts,
@@ -38,7 +38,7 @@ class Stock extends Component{
     //delete
    
     onDelete = (id) =>{
-        axios.delete(`http://localhost:8070/inventories/delete/${id}`).then(function () {
+        axios.delete(`https://mern-stack-caqm.onrender.com/inventories/delete/${id}`).then(function () {
             Swal.fire({
               icon: "success",
               title: "Table data deleted",
@@ -63,7 +63,7 @@ class Stock extends Component{
     handleSerchArea =(e)=>{
         const searchkey =e.currentTarget.value;
 
-        axios.get("http://localhost:8070/inventories/inventories").then(res =>{
+        axios.get("https://mern-stack-caqm.onrender.com/inventories/inventories").then(res =>{
             if(res.data.success){
                 this.filterData(res.data.existingPosts,searchkey)
             }

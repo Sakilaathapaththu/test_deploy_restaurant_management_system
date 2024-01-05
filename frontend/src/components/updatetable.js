@@ -29,7 +29,7 @@ const UpdateTable = (props) => {
       try {
         const id = props.match.params.id;
         
-        const response = await axios.get(`http://localhost:8070/tables/get/${id}`);
+        const response = await axios.get(`https://mern-stack-caqm.onrender.com/tables/get/${id}`);
         const data = response.data.tables;
         setTables(data);
       } catch (error) {
@@ -57,7 +57,7 @@ const UpdateTable = (props) => {
         ...tables,
         payment: calculatePayment() // Update the payment value before sending the request
       };
-      await axios.put(`http://localhost:8070/tables/update/${id}`, tables);
+      await axios.put(`https://mern-stack-caqm.onrender.com/tables/update/${id}`, tables);
       alert('Reservation updated successfully');
       props.history.goBack();
     } catch (error) {

@@ -21,7 +21,7 @@ export default function UpdateEmployee(){
 
     useEffect(() => {
         function getEmployee(){
-            axios.get("http://localhost:8070/employees/get/" + id).then((res) => {
+            axios.get("https://mern-stack-caqm.onrender.com/employees/get/" + id).then((res) => {
                 console.log(res.data);
                 setEmployee(res.data);
                 setId(res.data.ID)
@@ -55,7 +55,7 @@ export default function UpdateEmployee(){
     
             console.log(UpdateEmployee)
     
-            axios.put("http://localhost:8070/employees/update/" + id, UpdateEmployee).then(function(){
+            axios.put("https://mern-stack-caqm.onrender.com/employees/update/" + id, UpdateEmployee).then(function(){
                 toast.success("Employee Updated Sucessfully!",{theme:'colored'});
                 setId("");
                 setName("");

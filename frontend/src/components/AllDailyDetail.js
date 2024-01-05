@@ -27,7 +27,7 @@ export default function AllDailyDetail() {
   }, []);
 
   function getEmployees() {
-    axios.get("http://localhost:8070/dailydetail/daily").then((res) => {
+    axios.get("https://mern-stack-caqm.onrender.com/dailydetail/daily").then((res) => {
       console.log(res.data);
       setStudents(res.data);
     }).catch((err) => {

@@ -20,7 +20,7 @@ class Table extends Component {
   }
 
   retrieveTables() {//retrieveTables() function to retrieve all the tables from the database using an axios GET request
-    axios.get("http://localhost:8070/tables/tables").then((res) => {
+    axios.get("https://mern-stack-caqm.onrender.com/tables/tables").then((res) => {
       if (res.data.success) {
         this.setState({//updates the "tables" state with the data returned from the server
           tables: res.data.existingTables,

@@ -39,7 +39,7 @@ const [errors, setError] = useState(null);
         drivername
     }
 
-    axios.post("http://localhost:8070/distributions/add", newdistribution).then(()=>{
+    axios.post("https://mern-stack-caqm.onrender.com/distributions/add", newdistribution).then(()=>{
       toast.success("Distribution Added Successfully!",{theme:'colored'});  
       setDate("");
       setDambulla("");
